@@ -1,6 +1,11 @@
+import React from 'react';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import styles from './Button.module.scss';
+
+// to = internallink
+// href = externallink
+// classes = classWrapper
 
 const cx = classNames.bind(styles);
 
@@ -22,6 +27,7 @@ function Button({
     ...passProps
 }) {
     let Comp = 'button';
+
     const props = {
         onClick,
         ...passProps,
@@ -36,14 +42,6 @@ function Button({
         });
     }
 
-    if (to) {
-        props.to = to;
-        Comp = Link;
-    } else if (href) {
-        props.href = href;
-        Comp = 'a';
-    }
-
     const classes = cx('wrapper', {
         [className]: className,
         primary,
@@ -54,6 +52,15 @@ function Button({
         disabled,
         rounded,
     });
+
+    if (to) {
+        Comp = Link;
+        props.to = to;
+    } else if (href) {
+        props.href = href;
+        Comp = 'a';
+    }
+
     return (
         <Comp className={classes} {...props}>
             {leftIcon && <span className={cx('icon')}>{leftIcon}</span>}

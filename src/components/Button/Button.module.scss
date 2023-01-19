@@ -1,15 +1,16 @@
 .wrapper {
     display: inline-flex;
     justify-content: center;
+    font-family: 'ProximaNova', sans-serif;
     font-size: 1.6rem;
-    min-width: 100px;
+    min-width: 110px;
     height: 36px;
     padding: 6px 8px;
     margin: 0 0 0 16px;
     border-radius: 4px;
-    cursor: pointer;
     background-color: var(--white);
     border: 1px solid transparent;
+    cursor: pointer;
 
     &.disabled {
         pointer-events: none;
@@ -67,15 +68,19 @@
 }
 
 .text {
+    min-width: 110px;
+    padding: 0 16px;
+    height: 36px;
     border: 1px solid rgba(22, 24, 35, 0.12);
     border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
         text-decoration: underline;
     }
 }
-
-// Disable
 
 // Button sizes
 
