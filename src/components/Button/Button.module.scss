@@ -1,7 +1,7 @@
 .wrapper {
     display: inline-flex;
     justify-content: center;
-    font-family: 'ProximaNova', sans-serif;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     min-width: 110px;
     height: 36px;
