@@ -56,7 +56,7 @@ const MENU_ITEMS = [
 ];
 
 function Header() {
-    const currentUser = true;
+    const currentUser = false;
 
     const handleMenuChange = (menuItem) => {
         switch (menuItem.type) {
@@ -122,10 +122,10 @@ function Header() {
                             </Tippy>
                         </>
                     ) : (
-                        <div>
+                        <>
                             <Button text>Upload</Button>
                             <Button primary>Log in</Button>
-                        </div>
+                        </>
                     )}
                     <Menu items={userMenu ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
