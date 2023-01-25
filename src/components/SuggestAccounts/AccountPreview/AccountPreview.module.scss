@@ -1,0 +1,66 @@
+.wrapper {
+    position: relative;
+    width: 320px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    flex: 0 0 44px;
+    cursor: pointer;
+}
+
+.following-btn {
+    padding: 6px 16px;
+}
+
+.nickname {
+    font-size: 1.6rem;
+}
+
+.check {
+    font-size: 1.4rem;
+    color: #20c5ec;
+    margin-left: 4px;
+    line-height: 1;
+}
+
+.name {
+    font-size: 1.2rem;
+    opacity: #161823bf;
+}
+
+.analytics {
+    margin-top: 8px;
+}
+
+.value {
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 1.8rem;
+    line-height: 2;
+    display: inline-block;
+}
+
+.label {
+    margin-right: 12px;
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.8rem;
+    line-height: 2;
+    display: inline-block;
+}
